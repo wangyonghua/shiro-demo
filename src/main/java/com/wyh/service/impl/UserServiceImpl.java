@@ -1,6 +1,7 @@
 package com.wyh.service.impl;
 
 import com.wyh.dao.UserRepository;
+import com.wyh.dmo.User;
 import com.wyh.service.UserService;
 import org.springframework.stereotype.Service;
 

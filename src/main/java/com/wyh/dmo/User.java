@@ -1,7 +1,6 @@
 package com.wyh.dmo;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.springframework.data.annotation.Id;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;

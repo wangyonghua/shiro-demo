@@ -1,6 +1,7 @@
 package com.wyh.rest;
 
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -13,6 +14,7 @@ public class UserController {
      */
     @RequestMapping("/userList")
     @RequiresPermissions("user:view")//权限管理;
+    @RequiresRoles("admin")
     public String userInfo(){
         return "userList";
     }
